@@ -4,11 +4,11 @@ public class Comment {
     private String text;
     private String author;
 
-    public String getAuthor() {
-        return author;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public void setAuthor(String author) {
+    public void setauthor(String author) {
         this.author = author;
     }
 
@@ -16,7 +16,7 @@ public class Comment {
         return text;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public String getAuthor() {
+        return author;
     }
 }
