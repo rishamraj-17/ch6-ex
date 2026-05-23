@@ -15,7 +15,7 @@ import model.Comment;
 public class LoggingAspect {
     private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 
-    @Around("execution(* service.*.*(..))")
+    @Around("@Annotation(ToLog)")
     public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
         // String methodName = joinPoint.getSignature().getName();
         // Object[] args = joinPoint.getArgs();
